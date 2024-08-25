@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum UserStatus {
+
     ACTIVE(1), INACTIVE(0), LOCKED(2), REGISTERED(4);
 
     private static final Map<Integer, UserStatus> Lookup = new HashMap<>();

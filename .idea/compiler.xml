@@ -7,10 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="proman-api" />
-        <module name="proman-service" />
         <module name="proman-db" />
+        <module name="proman-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="technicaldb" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -7,7 +7,29 @@
     <groupId>com.upgrad.proman</groupId>
     <artifactId>proman</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.8.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.2</version>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,11 +37,11 @@
         <version>2.0.1.RELEASE</version>
     </parent>
 
+
     <modules>
         <module>proman-db</module>
         <module>proman-service</module>
         <module>proman-api</module>
     </modules>
-
 
 </project>
